@@ -1,4 +1,4 @@
-name: githubactions
+name: test
 run-name: ${{ github.actor }} is testing out GitHub Actions 
 on: [push]
 jobs:
@@ -12,5 +12,10 @@ jobs:
     steps:
       - name: second_job
         run: "echo seconf job" 
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: third job
+        run: "echo third job"      
          
     
