@@ -8,13 +8,13 @@ jobs:
       - name: first_job
         run: "echo first stage1"
   job2:
-    need: job
+    needs: job
     runs-on: ubuntu-latest
     steps:
       - name: second_job
         run: "echo seconf job" 
   job3:
-    need: job2
+    needs: job2
     runs-on: ubuntu-latest
     steps:
       - name: third job
