@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: first_job
-        run: "echo first stage"
+        run: "echo first stage1"
   job2:
     runs-on: ubuntu-latest
     steps:
