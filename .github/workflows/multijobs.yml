@@ -6,11 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: first_job
-        RUN: "echo first stage"
+        run: "echo first stage"
   job2:
     runs-on: ubuntu-latest
     steps:
       - name: second_job
-        RUN: "echo seconf job" 
+        run: "echo seconf job" 
          
     
