@@ -9,4 +9,6 @@ jobs:
       - name: expression
         run: echo "access the expression ${{ env.name }}" 
       - name: check the run id
-        run: echo "check the urun id $GITHUB_RUN_ID"     
+        run: echo "check the urun id $GITHUB_RUN_ID" 
+      - name: default working directory
+        run: echo "check for the working directory $GITHUB_WORKSPACE"      
