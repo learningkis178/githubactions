@@ -9,4 +9,4 @@ jobs:
       - name: expression
         run: echo "access the expression ${{ env.name }}" 
       - name: check the run id
-        run: ehco "check the run id $GITHUB_RUN_ID"     
+        run: echo"check the run id $GITHUB_RUN_ID"     
