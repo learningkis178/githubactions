@@ -1,0 +1,10 @@
+name: checking the expression
+on: [push]
+env:
+  name: orange
+jobs:
+  expression:
+    runs-on: ubuntu-latest
+    steps:
+      - name: expression
+        run: echo "access the expression ${{ env.name }}"    
