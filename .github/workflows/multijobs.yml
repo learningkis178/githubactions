@@ -24,6 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create annotation for build error
-        run: echo "::error file=app.js,line=1::Missing semicolon"         
+        run: echo "::notice file=test.sh,line=10,endLine=11,title=testing::know the message"
+        
          
     
