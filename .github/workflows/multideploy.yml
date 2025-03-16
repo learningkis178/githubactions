@@ -1,0 +1,16 @@
+ name: cartdeployment
+ run-name: cartdeploy
+ on: [push]
+ jobs:
+   dev:
+     runs-on: self-hosted
+     steps:
+       - name: delpoy to dev
+         run: echo "deploy to dev"
+   qa:
+     runs-on: self-hosted
+     needs: dev
+     steps:
+       - name: deploy to qa
+         run: echo "deploy to qa" 
+
