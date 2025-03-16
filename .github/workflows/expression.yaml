@@ -7,4 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: expression
-        run: echo "access the expression ${{ env.name }}"    
+        run: echo "access the expression ${{ env.name }}" 
+      - name: check the run id
+        run: ehco "check the run id $GITHUB_RUN_ID"     
