@@ -2,7 +2,7 @@
  on: [push]
  env:
    week: kishore
- variables:
+ jobs:
    vars:
    runs-on: ubuntu-latest
    steps:
