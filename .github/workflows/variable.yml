@@ -1,12 +1,11 @@
-- name: variables
-  run_name: test
-  on: [push]
-  env:
-    week: kishore
-  variables:
-    vars:
-    runs-on: ubuntu-latest
-    steps:
+ name: variables
+ on: [push]
+ env:
+   week: kishore
+ variables:
+   vars:
+   runs-on: ubuntu-latest
+   steps:
      - name: print the variable
        run: "echo print the variable $week"
 
