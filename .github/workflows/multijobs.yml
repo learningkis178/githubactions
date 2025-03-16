@@ -18,6 +18,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: third job
-        run: "echo third job"      
+        run: "echo third job"   
+  job4:
+    needs: [job , job2 , job3]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create annotation for build error
+        run: echo "::error file=app.js,line=1::Missing semicolon"         
          
     
