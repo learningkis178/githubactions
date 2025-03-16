@@ -7,6 +7,6 @@
      runs-on: ubuntu-latest
    steps:
      - name: print the variable
-       run: "echo print the variable $week"
+       run: echo "print the variable $week"
 
    
