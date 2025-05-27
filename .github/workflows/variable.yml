@@ -6,7 +6,7 @@
    vars:
      runs-on: ubuntu-latest
      steps:
-       - name: print the variable
+       - name: print the variable1
          run: echo "print the variable $week"
 
    
