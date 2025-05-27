@@ -11,4 +11,4 @@ jobs:
       - name: check the run id
         run: echo "check the urun id $GITHUB_RUN_ID" 
       - name: default working directory
-        run: echo "check for the working directory $GITHUB_WORKSPACE"      
+        run: echo "check for the to working directory $GITHUB_WORKSPACE"      
